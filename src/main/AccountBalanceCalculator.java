@@ -23,6 +23,10 @@ public class AccountBalanceCalculator {
             }
 
         }
+        transactionHistory.clear();
+        for (Transaction t : transactions) {
+            transactionHistory.add(t);
+        }
         return balance;
     }
 
